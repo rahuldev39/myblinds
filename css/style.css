@@ -9656,3 +9656,15 @@ a.single-box:hover p{
 .bw {
   background-color: #d4d4d4;
 }
+
+.owl-nav i {
+  font-size: 27px;
+  color: #094e98;
+}
+
+.owl-nav div {
+  padding: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -33,7 +33,10 @@ $(document).ready(function(){
 		responsiveClass: true,
 		items : 1,
 		nav : true,
-		navText: ['<img src="images/left-arrow.png" alt="" />', '<img src="images/right-arrow.png" alt="" />'],
+		navText: [
+				'<i class="fa fa-angle-left" aria-hidden="true"></i>', 
+				'<i class="fa fa-angle-right" aria-hidden="true"></i>'
+				],
 		margin: 0,
 		dots: true
     });
