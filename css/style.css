@@ -9668,3 +9668,9 @@ a.single-box:hover p{
   align-items: center;
   justify-content: center;
 }
+
+.footer-btm .back-to-top i {
+  font-size: 27px;
+  color: #094e98;
+  margin-top: 6px;
+}
