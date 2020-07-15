@@ -731,7 +731,7 @@ input:focus, textarea:focus {
 .logo-area .carts-area .cart-box a span {
   font-size: 12px;
   color: #fff;
-  background: #1260b3;
+  background: #ff9825;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1417,10 +1417,13 @@ input:focus, textarea:focus {
 /* =======================================
 08. Menu Area
 ======================================= */
-.menu-area .main-menu {
-  background-color: #eaeaea;
+.menu-area
+{
+  border-top: 4px solid #FF9800;
 }
-
+.menu-area, .main-menu {
+  background-color: #094e98;
+}
 .menu-area .main-menu ul li {
   position: relative;
   margin-right: 20px;
@@ -1428,15 +1431,15 @@ input:focus, textarea:focus {
 
 .menu-area .main-menu ul li a {
   font-size: 15px;
-  color: #444444;
+  color: #ffffff;
   display: inline-block;
   font-weight: 600;
-  padding: 10px 5px;
+  padding: 15px 10px;
 }
 
 .menu-area .main-menu ul li a i {
   font-size: 14px;
-  color: #666666;
+  color: #d1d2d4;
 }
 
 .menu-area .main-menu ul li a:hover {
@@ -9348,10 +9351,9 @@ input:focus, textarea:focus {
 
 .footer-top .f-contact .f-add i, .footer-top .f-contact .f-email i, .footer-top .f-contact .f-phn i {
   font-size: 15px;
-  color: #969696;
+  color: #ff9825;
   width: 20px;
 }
-
 .footer-top .f-contact .f-add span, .footer-top .f-contact .f-email span, .footer-top .f-contact .f-phn span {
   font-size: 15px;
   color: #969696;
@@ -9368,11 +9370,10 @@ input:focus, textarea:focus {
   display: inline-block;
   margin-top: 10px;
 }
-
 .footer-top .f-contact .f-social ul li a i {
   font-size: 13px;
-  color: #666666;
-  border: 1px solid #666666;
+  color: #ff9825;
+  border: 1px solid #ff9825;
   width: 28px;
   height: 28px;
   text-align: center;
@@ -9384,9 +9385,9 @@ input:focus, textarea:focus {
 }
 
 .footer-top .f-contact .f-social ul li a i:hover {
-  background: #1260b3;
-  border-color: #1260b3;
-  color: #e5e5e5;
+  background: #ff8828;
+  border-color: #ff9825;
+  color: #0c1821;
 }
 
 .footer-top .f-cat h5, .footer-top .f-sup h5, .footer-top .f-link h5 {
@@ -9476,9 +9477,8 @@ input:focus, textarea:focus {
   background: #0a4e98;
 }
 .promo-block .promo {
-  height: 45px;
   vertical-align: middle;
-  padding: 9px 20px;
+  padding: 24px 20px;
   line-height: 15px;
 }
 .promo-block .promo  {
@@ -9486,6 +9486,8 @@ input:focus, textarea:focus {
 }
 .promo-block .promo span b {
   font-weight: 400;
+  font-size: 15px;
+  display: block;
 }
 .promo-block .promo small {
   font-weight: 300;
@@ -9508,7 +9510,7 @@ input:focus, textarea:focus {
   max-width: 195px;
 }
 .single-box img {
-  border-bottom: 3px solid #094e98;
+  border-bottom: 3px solid #ff9825;
 }
 a.single-box:hover{
   background-color: #0a4e98 !important;
@@ -9524,14 +9526,14 @@ a.single-box:hover p{
   width: 65px;
   height: 65px;
   margin: 0 auto;
-  border: 4px solid #2c72b9;
-  border-radius: 50%;
+  border: 4px solid #ff9800;
+  border-radius: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 1;
-  background-color: #044e98;
+  background-color: #06212b;
 }
 .steps .icon img {
   width: 28px;
@@ -9547,7 +9549,7 @@ a.single-box:hover p{
   width: 80%;
   top: 35px;
   height: 4px;
-  background-color: #094e98;
+  background-color: #FF9800;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -9673,4 +9675,8 @@ a.single-box:hover p{
   font-size: 27px;
   color: #094e98;
   margin-top: 6px;
+}
+
+.bg-primary {
+  background-color: #094e98!important;
 }
