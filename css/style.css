@@ -277,8 +277,7 @@ input:focus, textarea:focus {
 02. Top Bar
 ======================================= */
 .top-bar {
-  height: 40px;
-  border-bottom: 1px solid #e5e5e5;
+  background-color: #0c1821;
 }
 
 .top-bar .top-left .lang-box {
@@ -431,12 +430,14 @@ input:focus, textarea:focus {
   margin: 0;
 }
 
-.top-bar .top-right ul li a {
-  color: #555555;
-  height: 40px;
+.top-bar ul li a {
+  color: #ffffff;
   display: inline-block;
-  border-right: 1px solid #e5e5e5;
-  padding: 9px 15px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+.top-bar  ul li a i{
+  color: #FF9800;
 }
 
 .top-bar .top-right ul li a img {
@@ -446,13 +447,10 @@ input:focus, textarea:focus {
 }
 
 .top-bar .top-right ul li a:hover {
-  color: #444444;
-  font-weight: 600;
+  color: #ff9825;
 }
 
-.top-bar .top-right ul li:first-child a {
-  border-left: 1px solid #e5e5e5;
-}
+
 
 /* =======================================
 03. Top Bar 2
@@ -653,8 +651,8 @@ input:focus, textarea:focus {
 04. Logo Area
 ======================================= */
 .logo-area {
-  height: 125px;
-  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 .logo-area .logo a img {
   width: 238px;
@@ -1417,9 +1415,8 @@ input:focus, textarea:focus {
 /* =======================================
 08. Menu Area
 ======================================= */
-.menu-area
-{
-  border-top: 4px solid #FF9800;
+.menu-area {
+  border-bottom: 8px solid #FF9800;
 }
 .menu-area, .main-menu {
   background-color: #094e98;
