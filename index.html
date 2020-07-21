@@ -50,7 +50,7 @@
         <section class="top-bar">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 d-none d-lg-block">
                         <div class="top-left">
                             <ul class="list-unstyled list-inline">
                                 <li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i> support@myblinds&curtains</a></li>
@@ -60,8 +60,8 @@
                         
                     </div>
                    
-                    <div class="col-lg-6 col-md-8 ml-auto">
-                        <div class="top-right text-right">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <div class="top-right text-md-right text-center">
                             <ul class="list-unstyled list-inline">
                                 <li class="list-inline-item"><a href="#"><img src="images/user.svg" alt="">My Account</a></li>
                                 <li class="list-inline-item"><a href="#"><img src="images/heart.svg" alt="">Wishlist</a></li>
@@ -76,25 +76,25 @@
         <!-- End Top Bar -->
 
         <!-- Logo Area -->
-        <section class="logo-area">
+        <section class="logo-area shadow-sm">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3">
                         <div class="logo">
                             <a href="#"><img src="images/logo.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-md-5 padding-fix">
+                    <div class="col-md-5 d-none d-md-block padding-fix">
                         <form action="#" class="search-bar">
                             <input type="text" name="search-bar" placeholder="I'm looking for...">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
-                    <div class="col-md-4">
-                        <div class="carts-area d-flex">
-                            <div class="call-box d-flex">
+                    <div class="col-6 col-md-4 ">
+                        <div class="carts-area d-flex justify-content-end align-items-center">
+                            <div class="call-box  d-none d-md-flex ">
                                 <div class="call-ico">
-                                    <img src="images/call.png" alt="">
+                                    <img src="images/phone.svg" width="35" alt="">
                                 </div>
                                 <div class="call-content">
                                     <span>Call Us</span>
@@ -105,6 +105,11 @@
                                 <a href="#" class="cart-btn">
                                     <img src="images/cart.png" alt="cart">
                                     <span>2</span>
+                                </a>
+                            </div>
+                            <div class="menu-toggle d-block d-md-none">
+                                <a href="#" class="">
+                                    <i class="lni lni-menu"></i> 
                                 </a>
                             </div>
                         </div>
@@ -435,52 +440,66 @@
 
         <!-- Mobile Menu -->
         <section class="mobile-menu-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="mobile-menu">
-                            <nav id="dropdown">
-                                <a href="#"><img src="images/logo.png" alt=""></a>
-                                <a href="#"><span>Sign In</span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Home</a>
-                                        <ul class="list-unstyled">
-                                            <li><a href="index.html">Home Style 1</a></li>
-	                                        <li><a href="02-home-two.html">Home Style 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="list-unstyled">
-                                            <li><a href="03-about-us.html">About Us</a></li>
-                                            <li><a href="04-category.html">Category</a></li>
-                                            <li><a href="05-single-product.html">Single Product</a></li>
-                                            <li><a href="06-shopping-cart.html">Shopping Cart</a></li>
-                                            <li><a href="07-checkout.html">Checkout</a></li>
-                                            <li><a href="08-login.html">Log In</a></li>
-                                            <li><a href="09-register.html">Register</a></li>
-                                            <li><a href="10-wishlist.html">Wishlist</a></li>
-                                            <li><a href="11-compare.html">Compare</a></li>
-                                            <li><a href="15-track-order.html">Track Order</a></li>
-                                            <li><a href="12-terms-condition.html">Terms & Condition</a></li>
-                                            <li><a href="13-faq.html">Faq</a></li>
-                                            <li><a href="14-404.html">404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Blog</a>
-                                        <ul class="list-unstyled">
-                                            <li><a href="16-blog-one.html">Blog Style 1</a></li>
-                                            <li><a href="17-blog-two.html">Blog Style 2</a></li>
-                                            <li><a href="18-blog-three.html">Blog Style 3</a></li>
-                                            <li><a href="19-blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="20-contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+            <ul class="nav nav-tabs bg-primary" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#blind-tab" role="tab">Blinds</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#color-tab" role="tab">Colors</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#rooms-tab" role="tab">Rooms</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="blind-tab" role="tabpanel" aria-labelledby="home-tab">
+                    <ul>
+                        <li class="menu-close"><a href="#" class="nav-icon-svg"><img src="./images/roller.svg" class="nav-icon-svg mr-2" width="24">Roller Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/wooden.svg" class="nav-icon-svg mr-2" width="24">Wooden Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/venetian.svg" class="nav-icon-svg mr-2" width="24">Venetian Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/vertical.svg" class="nav-icon-svg mr-2" width="24">Vertical Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/roman.svg" class="nav-icon-svg mr-2" width="24">Roman Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/day-and-night.svg" class="nav-icon-svg mr-2" width="24">Day &amp; Night Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/starry-night.svg" class="nav-icon-svg mr-2" width="24">Blackout Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/motorised.svg" class="nav-icon-svg mr-2" width="24">Motorised Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/truck.svg" class="nav-icon-svg mr-2" width="24">Next Day Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/shutter.svg" class="nav-icon-svg mr-2" width="24">Plantation Shutters</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/double-blind.svg" class="nav-icon-svg mr-2" width="24">Double Roller Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/curtains.svg" class="nav-icon-svg mr-2" width="24">247 Curtains</a></li>
+                      </ul>  
                 </div>
-            </div>
+                <div class="tab-pane fade" id="color-tab" role="tabpanel">
+                    <ul class="colour-tab-content">
+                        <li class="menu-close"><a href="#"><span class="color-circle gray"></span> Grey</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle white"></span> White</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle cream"></span> Natural and Cream</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle blue"></span> Blue</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle green"></span> Green</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle green"></span> Yellow</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle black"></span> Black</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle pink"></span> Pink</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle red"></span> Red</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle bw"></span> Black &amp; White Blinds</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle purple"></span> Purple</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle brown"></span> Brown</a></li>
+                        <li class="menu-close"><a href="#"><span class="color-circle orange"></span> Orange and Peach</a></li>
+                      </ul>
+                </div>
+                <div class="tab-pane fade" id="rooms-tab" role="tabpanel">
+                    <ul>
+                        <li class="menu-close"><a href="#"><img src="./images/bathroom.svg" class="nav-icon-svg mr-2" width="24">Bathroom Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="./images/children.svg" class="nav-icon-svg mr-2" width="24">Childrens Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="https://www.247blinds.co.uk/media//wysiwyg/icon-svg/kitchen-blinds.svg" class="nav-icon-svg mr-2" width="24">Kitchen Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="https://www.247blinds.co.uk/media//wysiwyg/icon-svg/dining-room-blinds.svg" class="nav-icon-svg mr-2" width="24">Dining Room Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="https://www.247blinds.co.uk/media//wysiwyg/icon-svg/living-room-blinds.svg" class="nav-icon-svg mr-2" width="24">Living Room Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="https://www.247blinds.co.uk/media//wysiwyg/icon-svg/office-blinds.svg" class="nav-icon-svg mr-2" width="24">Office Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="https://www.247blinds.co.uk/media//wysiwyg/icon-svg/skylight-blinds.svg" class="nav-icon-svg mr-2" width="24">Loft Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="https://www.247blinds.co.uk/media//wysiwyg/icon-svg/bedroom-blinds.svg" class="nav-icon-svg mr-2" width="24">Bedroom Blinds</a></li>
+                        <li class="menu-close"><a href="#"><img src="https://www.247blinds.co.uk/media//wysiwyg/icon-svg/conservatory-blinds.svg" class="nav-icon-svg mr-2" width="24">Conservatory Blinds</a></li>
+                
+                    </ul>
+                </div>
+              </div>
         </section>
         <!-- End Mobile Menu -->
 
@@ -511,72 +530,72 @@
                     <div class="col-md-12">
                         
                         <div class="slider-btm-box row">
-                            <div class="col-md-3  text-center mb-4">
+                            <div class="col-6 col-lg-3 text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c1.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c1.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Roller Blinds</h4>
                                     <p class="item-caption mx-3">Beautiful fabrics and designs to suit your style and home</p>
                                     </div>    
                                 </a>
                             </div>
-                            <div class="col-md-3 text-center mb-4">
+                            <div class="col-6 col-md-6 col-lg-3 text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c2.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c2.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Wooden Blinds</h4>
                                     <p class="item-caption mx-3">The natural beauty of wood in a versatile venetian blind</p>
                                     </div> 
                                 </a>
                             </div>
-                            <div class="col-md-3 text-center mb-4">
+                            <div class="col-6 col-md-6 col-lg-3 text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c3.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c3.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Venetian Blinds</h4>
                                     <p class="item-caption mx-3">Stylish blinds in brilliant colours and finishes with great light control</p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 text-center mb-4">
+                            <div class="col-6 col-md-6 col-lg-3 text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c4.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c4.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Vertical Blinds</h4>
                                     <p class="item-caption mx-3">This blind works perfectly for all windows with easy to use light and privacy controls</p>
                                     </div> 
                                 </a>
                             </div>
-                            <div class="col-md-3 text-center mb-4">
+                            <div class="col-6 col-md-6 col-lg-3 text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c5.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c5.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Roman Blinds</h4>
                                     <p class="item-caption mx-3">A sophisticated look for any taste or décor with soft fabric folds </p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-3  text-center mb-4">
+                            <div class="col-6 col-md-6 col-lg-3  text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c6.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c6.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Day Night Blinds</h4>
                                     <p class="item-caption mx-3">Perfect for someone looking for complete light control, privacy and luxury</p>
                                     </div> 
                                 </a>
                             </div>
-                            <div class="col-md-3  text-center mb-4">
+                            <div class="col-6 col-md-6  col-lg-3  text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c7.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c7.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Blackout Blinds</h4>
                                     <p class="item-caption mx-3">Designed for room darkening so a perfect choice for bedrooms or media rooms</p>
                                     </div> 
                                 </a>
                             </div>
-                            <div class="col-md-3 text-center mb-4">
+                            <div class="col-6 col-md-6 col-lg-3 text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c8.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c8.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box p-3">
                                         <h4 class="item-title text-primary   mb-2">Plantation Shutters</h4>
                                     <p class="item-caption mx-3">Perfect modern styling  for large window with great light control</p>
@@ -584,36 +603,36 @@
                                 </a>
                             </div>
 
-                            <div class="col-md-3 text-center mb-4">
+                            <div class="col-6 col-md-6  col-lg-3 text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c9.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c9.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Conservatory Blinds</h4>
                                     <p class="item-caption mx-3">Energy efficient blinds keep heat out in the summer and keep heat in during the winter </p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-3  text-center mb-4">
+                            <div class="col-6 col-md-6  col-lg-3  text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c10.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c10.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Next Day Blinds</h4>
                                     <p class="item-caption mx-3">Made To Measure Blinds with next day delivery</p>
                                     </div> 
                                 </a>
                             </div>
-                            <div class="col-md-3  text-center mb-4">
+                            <div class="col-6 col-md-6  col-lg-3  text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c11.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c11.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box  p-3">
                                         <h4 class="item-title text-primary   mb-2">Motorised Blinds</h4>
                                     <p class="item-caption mx-3">Somfy powered smart blinds to make life easier</p>
                                     </div> 
                                 </a>
                             </div>
-                            <div class="col-md-3 text-center mb-4">
+                            <div class="col-6 col-md-6  col-lg-3 text-center mb-4">
                                 <a class="h-100 single-box bg-light shadow-sm position-relative overflow-hidden d-block" href="#">
-                                    <img src="images/category/c12.jpg" alt="" class="img-fluid">
+                                    <img src="images/category/c12.jpg" alt="" class="img-fluid w-100">
                                     <div class="caption-box p-3">
                                         <h4 class="item-title text-primary   mb-2">MyCurtains</h4>
                                     <p class="item-caption mx-3">Visit our sister site for a massive range of curtains    </p>
@@ -636,26 +655,26 @@
                     <p>We believe in the quality of our blinds, which is why they all come with a three year guarantee. Our delivery times for made to measure blinds are some of the fastest in the industry, and our fast track option means you can have blinds dispatched on the same day, when ordered before 10am.</p>
                 </div>
                 
-                <div class="row text-sm-center steps position-relative mx-auto">
-                    <div class="col-md-3">
+                <div class="row text-center steps position-relative mx-auto">
+                    <div class="col-sm-3 col-6">
                         <div class="icon mb-3">
                             <img src="./images/booking.svg" alt="" width="50">
                         </div>
                         <span>Browse and choose</span>
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-sm-3 col-6">
                         <div class="icon mb-3">
                             <img src="./images/ruler.svg" alt="" width="50">
                         </div>
                         <span>Measure and order</span>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3 col-6">
                         <div class="icon  mb-3">
                             <img src="./images/relax.svg" alt="" width="50">
                         </div>
                         <span>Relax</span>
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-sm-3 col-6">
                         <div class="icon mb-3">
                             <img src="./images/maintenance.svg" alt="" width="50">
                         </div>
@@ -673,7 +692,7 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6">
-                        <div class="">
+                        <div class="pb-5 pb-md-0">
                                 <img src="./images/3469576.svg" alt="" class="img-fluid illustration">
                                 <h4 class="mt-4">Uncompromising quality at incredible prices</h4>
                                 <p>Add that extra touch of luxury to your home by having your blinds made to fit your windows perfectly. Our simple to follow measuring guide will help you accurately measure your windows so your blinds will fit flawlessl</p>
@@ -681,7 +700,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="">
+                        <div class="pt-5 pt-md-0">
                             <img src="./images/407081-PD36G8-622.svg" alt="" class="img-fluid illustration">
                                 <h4 class="mt-4">Customer service & satisfaction</h4>
                                 <p>We understand that finding the right window blinds to fit your home takes time, so we’re more than happy to send you some free samples to help you decide. Your opinion matters to us, and our highly-trained members of staff are on-hand to answer any questions or respond to any comments you may have. We have an excellent customer rating – so contact us if you have any queries and we’ll be glad to help</p>
@@ -696,32 +715,32 @@
             <div class="container">
                 <div class="top-promo promo-block d-flex">
             
-                    <div class="item-promo header-ads-item-1 hidden-xs flex-fill">
-                    <div class="promo img-m">
-                        <span class="d-block"><b>Fast &amp; Free UK Delivery*</b></span>
-                        <small>next day available on many items</small>
+                    <div class="item-promo header-ads-item-1 d-none d-md-block flex-fill">
+                        <div class="promo img-m">
+                            <span class="d-block"><b>Fast &amp; Free UK Delivery*</b></span>
+                            <small>next day available on many items</small>
+                        </div>
                     </div>
-                </div>
                 
-                <div class="item-promo header-ads-item-2 hidden-xs flex-fill">
-                    <div class="promo img-m">
-                        <span class="d-block"><b>Free Samples</b></span>
-                        <small>unlimited sent by first class post</small>
+                    <div class="item-promo header-ads-item-2 d-none d-lg-block flex-fill">
+                        <div class="promo img-m">
+                            <span class="d-block"><b>Free Samples</b></span>
+                            <small>unlimited sent by first class post</small>
+                        </div>
                     </div>
-                </div>
                 
-                <div class="item-promo header-ads-item-3 hidden-sm flex-fill">
-                    <div class="promo img-m">
-                        <span class="d-block"><b> 3 Year Guarantee </b></span>
-                        <small>For complete peace of mind</small>
+                    <div class="item-promo header-ads-item-3 d-none d-xl-block flex-fill">
+                        <div class="promo img-m">
+                            <span class="d-block"><b> 3 Year Guarantee </b></span>
+                            <small>For complete peace of mind</small>
+                        </div>
                     </div>
-                </div>
                 
-                <div class="item-promo header-ads-item-4 flex-fill d-flex align-items-center">
-                    <div class="promo img-m" style="padding: 6px 10px 0px 10px;">
-                        <img alt="Five Star Reviews" class="img-responsive" style="width: 300px; margin: 0 auto;" src="https://www.247blinds.co.uk//media/wysiwyg/trust-pilot-header-ads.svg" }}"="">
+                    <div class="item-promo header-ads-item-4 flex-fill d-flex align-items-center">
+                        <div class="promo img-m">
+                            <img alt="Five Star Reviews" class="img-responsive" style="width: 300px; margin: 0 auto;" src="https://www.247blinds.co.uk//media/wysiwyg/trust-pilot-header-ads.svg" }}"="">
+                        </div>
                     </div>
-                </div>
             </div> 
             </div>
         </section>
@@ -842,9 +861,7 @@
         <!-- Price Filter -->
         <script src="js/assets/price-filter.js"></script>
 
-        <!-- Mean Menu -->
-        <script src="js/assets/jquery.meanmenu.min.js"></script>
-
+        
         <!-- Custom JS -->
         <script src="js/plugins.js"></script>
         <script src="js/custom.js"></script>

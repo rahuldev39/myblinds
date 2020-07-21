@@ -18,6 +18,13 @@ $(document).ready(function(){
 			$(".sticky-menu").addClass("sticky");
 		}
 	});
+	
+
+	// Mobile menu toggle
+	$(".menu-toggle a").on('click', function(){
+		$('body').addClass('open-menu');
+		$('.cart-overlay').addClass('visible')
+	});
 
 	/***** Owl Carousel *****/
 
@@ -196,33 +203,7 @@ $(document).ready(function(){
 		}
     });
 
-	// Blog Slider
-	$(".blog-slider").owlCarousel({
-		autoplay:false,
-    	autoplayHoverPause:true,
-    	smartSpeed:500,
-		loop: true,
-		responsiveClass: true,
-		items : 3,
-		nav : true,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		margin: 25,
-		dots: false,
-		responsive: {
-			0: {
-				items: 1
-			},
-			576: {
-				items: 2
-			},
-			768: {
-				items: 2
-			},
-			992: {
-				items: 3
-			}
-		}
-    });
+	
 
 	// Testimonial Slider
 	$(".test-body").owlCarousel({
@@ -333,33 +314,7 @@ $(document).ready(function(){
 		dots: false
     });
 
-	// Team slider
-	$(".team-slider").owlCarousel({
-		autoplay:false,
-    	autoplayHoverPause:true,
-    	smartSpeed:500,
-		loop: true,
-		responsiveClass: true,
-		items : 4,
-		nav : true,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-		margin: 25,
-		dots: false,
-		responsive: {
-			0: {
-				items: 1
-			},
-			576: {
-				items: 2
-			},
-			768: {
-				items: 3
-			},
-			992: {
-				items: 4
-			}
-		}
-    });
+
 
 	// Similar Item Slider
 	$(".sim-slider").owlCarousel({
@@ -398,7 +353,8 @@ $(document).ready(function(){
 	$('.close-cart, .cart-overlay').on('click', function(e){
 	    e.preventDefault();
 	    $('.cart-overlay').removeClass('visible');
-	    $('.cart-body').removeClass('open');
+		$('.cart-body').removeClass('open');
+		$('body').removeClass('open-menu')
 	});
 
 	/***** WOW Js *****/
