@@ -4802,12 +4802,12 @@ input:focus, textarea:focus {
 24. Breadcrumb Area
 ======================================= */
 .breadcrumb-area {
-  background: #f1f1f1;
-  padding: 35px 0;
+  padding-top: 13px;
+  padding-bottom: 20px;
 }
 
 .breadcrumb-area .breadcrumb-box ul li {
-  font-size: 15px;
+
   color: #8D8E92;
   text-transform: uppercase;
 }
@@ -4817,16 +4817,18 @@ input:focus, textarea:focus {
   margin-right: 6px;
   vertical-align: text-bottom;
 }
-
 .breadcrumb-area .breadcrumb-box ul li a {
-  font-size: 15px;
-  color: #444444;
+  color: #064e98;
 }
 
 .breadcrumb-area .breadcrumb-box ul li a:hover {
   color: #1260b3;
 }
-
+.breadcrumb-area .breadcrumb-box{
+  background-color: whitesmoke;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
 /* =======================================
 25. About Us
 ======================================= */
@@ -5017,8 +5019,10 @@ input:focus, textarea:focus {
 27. Category Area
 ======================================= */
 .category {
-  padding: 50px 0;
+  padding: 30px 0;
 }
+
+
 
 .category .category-box {
   margin-bottom: 35px;
@@ -5087,16 +5091,17 @@ input:focus, textarea:focus {
 }
 
 .category .cat-brand {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .category .cat-brand .sec-title h6 {
-  color: #444444;
+  color: #044e98;
   text-transform: uppercase;
   font-weight: 600;
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   margin-bottom: 12px;
+  font-size: 13px;
 }
 
 .category .cat-brand .brand-box ul li input {
@@ -5106,13 +5111,22 @@ input:focus, textarea:focus {
 .category .cat-brand .brand-box ul li input:hover {
   cursor: pointer;
 }
-
-.category .cat-brand .brand-box ul li label {
-  color: #666666;
-  vertical-align: middle;
-  font-weight: 600;
+.category .cat-brand .brand-box ul li {
+  margin-bottom: 10px;
 }
-
+.category .cat-brand .brand-box ul.color-filter li {
+  margin-bottom: 15px;
+}
+.category .cat-brand .brand-box ul li label {
+  color: #0c1821;
+  vertical-align: middle;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.category .cat-brand .brand-box ul li span {
+  font-size: 12px;
+  display: inline-block;
+}
 .category .cat-brand .brand-box ul li label:hover {
   cursor: pointer;
 }
@@ -5474,6 +5488,7 @@ input:focus, textarea:focus {
 .category .product-box .tab-content .tab-pane .tab-item .tab-img {
   margin-bottom: 10px;
   position: relative;
+  border-bottom: 2px solid #ff9825;
 }
 
 .category .product-box .tab-content .tab-pane .tab-item .tab-img img.main-img {
@@ -9711,4 +9726,38 @@ a.single-box:hover p{
   padding-top: 5px;
   display: block;
   margin-left: 12px;
+}
+
+.page-header h2 {
+  font-weight: 800;
+  color: #064e98;
+}
+.product-header h4
+{
+  font-weight: 600;
+  color: #064e98;
+}
+
+
+.color-filter label input[type="checkbox"] + img {
+  border: 1px solid #dcdbdb;
+  padding: 2px;
+  margin-right: 8px;
+}
+.color-filter label input[type="checkbox"]:checked + img {
+  border-color: #064e98;
+}
+.filter-header {
+  border-bottom: 1px solid #eeeeee;
+  padding: 11px 0px;
+  margin-bottom: 20px;
+}
+.filter-header h5 {
+  font-weight: 600;
+  color: #064e98;
+  font-size: 18px;
+}
+.filter-box{
+  position: sticky;
+  top: 0;
 }
