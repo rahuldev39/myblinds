@@ -26,6 +26,14 @@ $(document).ready(function(){
 		$('.cart-overlay').addClass('visible')
 	});
 
+
+	// Filter toggle
+
+	$('.filter-toggle a').on('click', function() {
+		$('body').addClass('filter-open');
+		$('.cart-overlay').addClass('visible')
+	});
+
 	/***** Owl Carousel *****/
 
 	// Home 1 Slider
@@ -354,7 +362,8 @@ $(document).ready(function(){
 	    e.preventDefault();
 	    $('.cart-overlay').removeClass('visible');
 		$('.cart-body').removeClass('open');
-		$('body').removeClass('open-menu')
+		$('body').removeClass('open-menu');
+		$('body').removeClass('filter-open')
 	});
 
 	/***** WOW Js *****/
