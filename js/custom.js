@@ -338,16 +338,16 @@ $(document).ready(function(){
 		dots: false,
 		responsive: {
 			0: {
-				items: 1
-			},
-			576: {
 				items: 2
 			},
+			576: {
+				items: 4
+			},
 			768: {
-				items: 3
+				items: 5
 			},
 			992: {
-				items: 4
+				items: 7
 			}
 		}
     });

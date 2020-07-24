@@ -4807,9 +4807,7 @@ input:focus, textarea:focus {
 }
 
 .breadcrumb-area .breadcrumb-box ul li {
-
   color: #8D8E92;
-  text-transform: uppercase;
 }
 
 .breadcrumb-area .breadcrumb-box ul li span {
@@ -5896,7 +5894,6 @@ input:focus, textarea:focus {
 }
 
 .sg-product .sg-img .tab-content {
-  border: 1px solid #e5e5e5;
   margin-bottom: 15px;
 }
 
@@ -5908,9 +5905,8 @@ input:focus, textarea:focus {
   max-width: 73px;
   border: 1px solid #e5e5e5;
 }
-
 .sg-product .sg-img .nav a.nav-item.active img {
-  border-color: #8D8E92;
+  border-color: #ff9825;
 }
 
 .sg-product .sg-content .pro-tag ul li a {
@@ -5920,10 +5916,9 @@ input:focus, textarea:focus {
 .sg-product .sg-content .pro-tag ul li a:hover {
   color: #e45151;
 }
-
 .sg-product .sg-content .pro-name p {
   font-size: 26px;
-  color: #444444;
+  color: #0c1821;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -6345,6 +6340,7 @@ input:focus, textarea:focus {
 .sg-product .sim-pro .sim-slider .sim-item {
   overflow: hidden;
   border: 1px solid #eeeeee;
+  padding: 10px;
 }
 
 .sg-product .sim-pro .sim-slider .sim-item .sim-heading ul {
@@ -6365,9 +6361,12 @@ input:focus, textarea:focus {
 }
 
 .sg-product .sim-pro .sim-slider .sim-item .sim-heading p a {
-  font-size: 15px;
-  color: #1260b3;
+  font-size: 12px;
+  color: #0c1821;
   font-weight: 600;
+  line-height: 18px;
+  display: block;
+  margin-top: 28px;
 }
 
 .sg-product .sim-pro .sim-slider .sim-item .sim-heading p a:hover {
@@ -6594,12 +6593,19 @@ input:focus, textarea:focus {
 
 .sg-product .category-box #accordion .card .card-header a {
   display: block;
+  border: 1px solid #c3c3c3;
+  padding: 8px 12px;
 }
-
+.sg-product .category-box #accordion .card .card-header a:hover,
+.sg-product .category-box #accordion .card .card-header a:not(.collapsed)
+{
+  border-color: #064e98;
+}
 .sg-product .category-box #accordion .card .card-header a span {
-  color: #666666;
+  color: #444444;
   font-weight: 600;
 }
+
 
 .sg-product .category-box #accordion .card .card-header a i {
   float: right;
@@ -9688,10 +9694,14 @@ a.single-box:hover p{
 }
 
 .owl-nav i {
-  font-size: 27px;
+  font-size: 20px;
   color: #094e98;
+  display: block;
+  line-height: 15px;
 }
-
+.owl-nav > div:hover i{
+  color: white;
+}
 .owl-nav div {
   padding: 0px !important;
   display: flex;
@@ -9807,5 +9817,80 @@ a.single-box:hover p{
 }
 .clear-all {
   font-weight: 500;
+  color: #064e98;
+}
+
+.ordering-tab .tab-content .tab-pane {
+  border: 1px solid #044e98;
+  border-top: 0px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0c1821;
+  margin-bottom: 5px;
+}
+.ordering-tab .nav-item .nav-link {
+  margin-right: 2px;
+  background-color: #064e98;
+  border-radius: 0px;
+  color: white;
+  font-size: 12px;
+  border-color: #044e98;
+  padding: 6px 11px;
+}
+.ordering-tab .nav-item .nav-link.active {
+  background-color: white;
+  color: #044e98;
+  border-bottom-color: white;
+}
+.ordering-tab .nav-tabs {
+  border-bottom: 1px solid #044e98;
+}
+.btn {
+  min-height: 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.btn-warning, 
+.btn-warning:focus, 
+.btn-warning:not(:disabled):not(.disabled):active {
+  color: #ffffff;
+  background-color: #FF9800;
+  border-color: #ff9825;
+}
+.btn-warning:hover {
+  color: #ffffff;
+  background-color: #e48800;
+  border-color: #e48820;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #064e98;
+  border-color: #064e98;
+}
+.final-price span {
+  font-size: 15px;
+  font-style: italic;
+  margin-right: 10px;
+}
+.final-price h4 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #064e98;
+}
+.check-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 15px;
+}
+.check-list li::before {
+  content: "\f00c";
+  display: inline-block;
+  font-family: FontAwesome;
+  text-rendering: auto;
+  position: absolute;
+  left: 0px;
   color: #064e98;
 }
