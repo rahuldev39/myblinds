@@ -427,7 +427,11 @@ $(document).ready(function(){
 
 	/***** Mobile Menu *****/
 	jQuery('nav#dropdown').meanmenu({
-		meanScreenWidth: "767"
+		meanScreenWidth: "767",
+		meanMenuContainer: '.mobile-menu-area',
+		meanExpandableChildren: true,
+		meanShowChildren: true,
+		meanDisplay: "block"
 	});
 
 	/***** Back To Top *****/

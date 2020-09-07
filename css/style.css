@@ -912,6 +912,8 @@ input:focus, textarea:focus {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
+  max-width: 100vh;
+  overflow: auto;
 }
 
 .cart-body .close-btn {
@@ -2185,7 +2187,6 @@ input:focus, textarea:focus {
   float: none;
   z-index: 999;
   text-align: center;
-  padding: 10px 0 15px;
   width: 100%;
 }
 
@@ -2198,6 +2199,7 @@ input:focus, textarea:focus {
 .mean-container .mean-bar .meanmenu-reveal {
   color: #1260b3;
   width: 23px;
+  display: none !important;
 }
 
 .mean-container .mean-bar .meanmenu-reveal span {
@@ -2216,33 +2218,17 @@ input:focus, textarea:focus {
   max-width: 140px;
 }
 
-.mean-container .mean-bar .mean-nav a span {
-  color: #444444;
-  float: right;
-  padding: 3px 12px;
-  border: 1px solid #e5e5e5;
-  font-weight: 600;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -ms-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
 
 .mean-container .mean-bar .mean-nav a span:hover {
   color: #fff;
   background: #1260b3;
   border-color: #1260b3;
 }
-
+.mean-container .mean-bar .mean-nav > ul {
+  display: block !important;
+}
 .mean-container .mean-bar .mean-nav ul {
-  margin-top: 35px;
   text-align: left;
-  padding: 0 30px;
 }
 
 .mean-container .mean-bar .mean-nav ul li {
@@ -2250,11 +2236,12 @@ input:focus, textarea:focus {
 }
 
 .mean-container .mean-bar .mean-nav ul li a {
-  color: #555555;
+  color: #0a4e98;
   display: block;
-  padding: 6px 0;
-  border-bottom: 1px solid #eeeeee;
+  padding: 0px 15px;
+  border-bottom: 1px solid #e6e5e5;
   letter-spacing: 0.5px;
+  line-height: 46px;
 }
 
 .mean-container .mean-bar .mean-nav ul li a:hover {
@@ -2262,7 +2249,7 @@ input:focus, textarea:focus {
 }
 
 .mean-container .mean-bar .mean-nav ul li:nth-child(1) a {
-  border-top: 1px solid #eeeeee;
+  
 }
 
 .mean-container .mean-bar .mean-nav ul li .mean-expand {
@@ -2270,26 +2257,32 @@ input:focus, textarea:focus {
   position: absolute;
   right: 0;
   top: 0;
-  margin-top: -6px;
   z-index: 2;
   background: transparent;
   border: none !important;
+  padding: 0px;
+  border-left: 1px solid #e6e5e5 !important;
+  width: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 47px;
 }
-
 .mean-container .mean-bar .mean-nav ul li .mean-expand:hover {
   background: transparent;
 }
 
-.mean-container .mean-bar .mean-nav ul li ul {
-  padding-left: 20px;
-  margin-top: 10px;
+.mean-container .mean-bar .mean-nav > ul > li > a:not(.mean-expand) {
+  font-weight: 500;
 }
 
 .mean-container .mean-bar .mean-nav ul li ul li a {
+  padding-left: 31px;
   font-size: 13px;
-  border: none !important;
 }
-
+.mean-container .mean-bar .mean-nav ul li ul li  ul li a{
+  padding-left: 46px;
+}
 /* =======================================
 11. Slider Area
 ======================================= */
